@@ -22,10 +22,10 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_width="412dp"
+        android:layout_height="143dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent">
+        tools:layout_editor_absoluteX="2dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,12 +45,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:paddingLeft="15dp"
                         android:text="Product Name" />
 
                     <EditText
                         android:id="@+id/productname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:paddingLeft="15dp"
                         android:hint="Product Name" />
                 </LinearLayout>
 
@@ -62,18 +70,28 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:paddingLeft="15dp"
                         android:text="Product Price" />
 
                     <EditText
                         android:id="@+id/productprice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:paddingLeft="15dp"
                         android:hint="Product Price" />
                 </LinearLayout>
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:layout_gravity="center"
                     android:orientation="horizontal">
 
                     <Button
@@ -91,10 +109,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/partrecyclerview"
-        android:layout_width="409dp"
-        android:layout_height="373dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="269dp" />
+        android:layout_width="304dp"
+        android:layout_height="349dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="91dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
