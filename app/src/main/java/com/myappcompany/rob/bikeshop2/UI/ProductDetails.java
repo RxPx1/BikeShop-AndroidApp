@@ -36,7 +36,7 @@ public class ProductDetails extends AppCompatActivity {
         editPrice = findViewById(R.id.productprice);
         id = getIntent().getIntExtra("id", -1);
         name = getIntent().getStringExtra("name");
-        price = getIntent().getDoubleExtra("price", 1);
+        price = getIntent().getDoubleExtra("price",0 );
         editName.setText(name);
         editPrice.setText(Double.toString(price));
         repo = new Repo(getApplication());

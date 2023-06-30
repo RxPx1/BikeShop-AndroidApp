@@ -23,9 +23,9 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="412dp"
-        android:layout_height="143dp"
+        android:layout_height="300dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="2dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,62 +37,70 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:paddingLeft="15dp"
-                        android:text="Product Name" />
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/productname"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product Name"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/productname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Product Name"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:paddingLeft="15dp"
-                        android:hint="Product Name" />
-                </LinearLayout>
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Product Price"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:paddingLeft="15dp"
-                        android:text="Product Price" />
-
-                    <EditText
-                        android:id="@+id/productprice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="center"
-                        android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:paddingLeft="15dp"
-                        android:hint="Product Price" />
-                </LinearLayout>
+                        <EditText
+                            android:id="@+id/productprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Product Price"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="8dp"
                     android:layout_gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp">
 
                     <Button
                         android:id="@+id/saveproduct"
@@ -111,9 +119,7 @@
         android:id="@+id/partrecyclerview"
         android:layout_width="304dp"
         android:layout_height="349dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="77dp"
-        android:layout_marginEnd="91dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />

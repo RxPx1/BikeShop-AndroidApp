@@ -61,9 +61,10 @@ public class PartAdapter extends RecyclerView.Adapter<PartAdapter.PartViewHolder
         if(mParts!=null){
             Part current=mParts.get(position);
             String name=current.getPartName();
-            int prodID= current.getProductID();
+            double price= current.getPartPrice();
             holder.partItemView.setText(name);
-            holder.partItemView2.setText(Integer.toString(prodID));
+            String formattedPrice = String.format("%.2f", price);
+            holder.partItemView2.setText(formattedPrice);
         }
         else{
             holder.partItemView.setText("No part name");
